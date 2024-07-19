@@ -1,8 +1,6 @@
-import path from 'node:path';
+import { PATH_DB } from '../constants/contacts.js';
 import { faker } from '@faker-js/faker';
 import fs from 'node:fs';
-
-const PATH_DB = path.join("src", "db", "db.json");
 
 const generateContacts = (number) => {
     const contacts = [];

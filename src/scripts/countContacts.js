@@ -1,7 +1,6 @@
-import path from 'node:path';
+import { PATH_DB } from '../constants/contacts.js';
 import fs from 'node:fs/promises';
 
-const PATH_DB = path.join("src", "db", "db.json");
 
 export const countContacts = async () => {
     const data = await fs.readFile(PATH_DB);
